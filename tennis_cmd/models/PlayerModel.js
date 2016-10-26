@@ -14,7 +14,7 @@ let Player = function (number, name, initGameScore, initSetScore) {
 Player.prototype.SCORE_TEXT = ["Love", "Fifteen", "Thirty", "Forty", "Advantage"];
 Player.prototype.MAX_SET_SCORE = 7;
 Player.prototype.MIN_SET_SCORE = 6;
-Player.prototype.MIN_GAME_SCORE = 5;
+Player.prototype.MIN_GAME_SCORE = 4;
 Player.prototype.MIN_GAME_LEAD = 2;
 Player.prototype.MIN_SET_LEAD = 2;
 
@@ -43,21 +43,21 @@ Player.prototype.printScore = function (otherPlayerObj) {
         if ((player1.gameScore - player2.gameScore) >= 1 && player1.gameScore > 3) {
             scorePattern = "p1a"; //player1 advantage
         }
-        if ((player1.gameScore - player2.gameScore) >= 2 && player1.gameScore > 4) {
+        if ((player1.gameScore - player2.gameScore) >= 2 && player1.gameScore > 3) {
             scorePattern = "p1w"; //player1 win
         }
 
         if ((player2.gameScore - player1.gameScore) >= 1 && player2.gameScore > 3) {
             scorePattern = "p2a"; //player2 advantage
         }
-        if ((player2.gameScore - player1.gameScore) >= 2 && player2.gameScore > 4) {
+        if ((player2.gameScore - player1.gameScore) >= 2 && player2.gameScore > 3) {
             scorePattern = "p2w"; //player2 win
         }
     }
     if (player1.gameScore == player2.gameScore) {// same score.
         scorePattern = "xx";//xx could just be xy, since both will do the same print, but left for different for reading.
 
-        if(player1.gameScore >= 4) {// deuce check;
+        if(player1.gameScore >= 3) {// deuce check;
             scorePattern = "deuce";
         }
     }
