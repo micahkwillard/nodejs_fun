@@ -1,0 +1,22 @@
+{
+  "name": "tennis_cmd",
+  "version": "1.0.0",
+  "description": "A command-line tennis game/set tracker.",
+  "main": "tennis_cmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tennis"
+  ],
+  "author": "Micah Willard",
+  "license": "GPL-3.0",
+  "bin": {
+    "tennis.sh": "./tennis_cmd.js"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0"
+  }
+}

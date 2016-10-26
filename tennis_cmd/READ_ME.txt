@@ -7,10 +7,13 @@ Requirements:
 1) open a terminal and navigate to the tennis_cmd folder.
 2) execute: "npm install -g"
     NOTE: sudo may be required.
-3) execute: "tennis_cmd" options are listed below
+3) execute: "tennis.sh" options are listed below
+4) Valid "Score Event" is "<Player 1> scores!" in which <Player 1> is the string passed in on --p1name
 4) enjoy!
 
 OPTIONS:
+--help
+
 --p1name Player 1's name (Player 1 is default)
 
 --p2name Player 2's name (Player 2 is default)
